@@ -23,8 +23,7 @@ async def main():
         while 1:
             for each in var_list:
                 await each.set_value(random.randint(1,100))
-                await asyncio.sleep(0.001)
-            await asyncio.sleep(0)
+            await asyncio.sleep(random.randint(1,100)/1000)
             
 if __name__ == "__main__":
     asyncio.run(main())
