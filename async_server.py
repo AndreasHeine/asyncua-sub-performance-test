@@ -1,5 +1,5 @@
 import asyncio, random
-from asyncua import ua, uamethod, Server, common
+from asyncua import ua, Server
 
 async def main():
     server = Server()
